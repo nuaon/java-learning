@@ -1,3 +1,5 @@
+* 安装docker
+`yum install docker-ce --nobest`
 * 查看镜像
 `docker images`
 
@@ -68,7 +70,11 @@ docker restart 可以重启容器，其作用就是依次执行 docker stop 和 
 `docker pause openapi`
 
 
-
-
 * 查看资源占用情况
 `docker stats openapi`
+* Docker安装vim
+```bash
+apt update
+apt-get install -y vim
+```
+
