@@ -26,7 +26,7 @@ System.out.println("商是：" + bignum3);
 
 
 ```java
-BigDecimal totalFeeDecimal = new BigDecimal("10");
+BigDecimal totalFeeDecimal = BigDecimal.valueOf(100L);
 // 四舍五入保留两位小数
 totalFeeDecimal.setScale(2, RoundingMode.HALF_UP);
 
