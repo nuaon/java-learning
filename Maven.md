@@ -47,3 +47,30 @@ exclusions：用来排除传递性依赖
 典型例子：servlet-api.jar，一般在发布到 服务器中，比如 tomcat，服务器会自带 servlet-api.jar 包，所以provided 范围依赖只在编译测试有效。
 
 **「runtime 范围依赖」**：在测试、运行的时候依赖，在编译的时候不依赖。例如：JDBC 驱动，项目代码只需要 jdk 提供的 jdbc 接口，只有在执行测试和运行项目的时候才需要实现 jdbc 的功能。
+
+
+
+
+
+#### 1. 创建maven项目
+
+```bash
+mvn archetype:generate -DgroupId=cn.nuaon -DartifactId=api -Dversion=1.0.0 -DinteractiveMode=false -Dpackage=cn.nuaon.api
+```
+
+#### 2. maven项目生成eclipse项目文件
+
+```bash
+mvn eclipse:eclipse
+```
+
+#### 3. maven项目生成idea项目文件
+
+```bash
+mvn idea:idea
+```
+
+
+
+
+
