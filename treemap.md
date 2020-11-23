@@ -47,3 +47,6 @@ for(Map.Entry<String, String> entry : treeMap.entrySet())
 9 => 1
 ```
 
+#### 注意
+
+当修改 TreeSet/TreeMap默认排序规则时候，必须有0的返回，否则可能删除不掉元素。

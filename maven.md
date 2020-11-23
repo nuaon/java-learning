@@ -70,6 +70,16 @@ mvn eclipse:eclipse
 mvn idea:idea
 ```
 
+#### 4. mvn命令跳过测试
+
+```shell
+# 测试类不会生成.class文件
+mvn install -Dmaven.test.skip=true
+
+# 测试类会生成.class文件
+mvn install -DskipTests
+```
+
 
 
 
