@@ -27,4 +27,9 @@ lists.stream().map(String::toUpperCase).sorted((a, b) -> {
 
 List<String> lists2 = lists.stream().map(String::toUpperCase).sorted(String::compareTo).collect(Collectors.toList());
 logger.info(lists2.toString());
+
+List<String> lists3 = lists.stream().map(String::toUpperCase).sorted(String::compareTo).peek(i -> {
+    // TODO:
+}).collect(Collectors.toList());
+
 ```
