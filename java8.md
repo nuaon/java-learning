@@ -39,4 +39,7 @@ List<String> lists2 = lists.stream().map(String::toUpperCase).sorted(String::com
 }).collect(Collectors.toList());
 logger.info(lists2.toString());
 
+// List分组
+Map<Integer, List<Coupon>> resultList = couponList.stream().collect(Collectors.groupingBy(Coupon::getId));
+
 ```
