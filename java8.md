@@ -45,4 +45,7 @@ Map<Integer, List<Coupon>> resultList = couponList.stream().collect(Collectors.g
 // List转Map
 Map<Integer, String> map = hostings.stream().collect(Collectors.toMap(Hosting::getId, Hosting::getName));
 
+// 获取List第几页数据
+list.stream().skip((page - 1) * size).limit(size).collect(Collectors.toList());
+
 ```
