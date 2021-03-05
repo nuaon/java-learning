@@ -42,4 +42,7 @@ logger.info(lists2.toString());
 // List分组
 Map<Integer, List<Coupon>> resultList = couponList.stream().collect(Collectors.groupingBy(Coupon::getId));
 
+// List转Map
+Map<Integer, String> map = hostings.stream().collect(Collectors.toMap(Hosting::getId, Hosting::getName));
+
 ```
