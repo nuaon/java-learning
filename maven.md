@@ -78,6 +78,9 @@ mvn install -Dmaven.test.skip=true
 
 # 测试类会生成.class文件
 mvn install -DskipTests
+
+# 将Jar文件安装到本地Maven中
+mvn install:install-file -Dfile=jave-1.0.2.jar -DgroupId=it.sauronsoftware -DartifactId=jave -Dversion=1.0.2 -Dpackaging=jar
 ```
 
 
