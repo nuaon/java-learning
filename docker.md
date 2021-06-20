@@ -78,3 +78,14 @@ apt update
 apt-get install -y vim
 ```
 
+```bash
+docker pull rabbitmq:3.8.14-management
+docker run -dit --name rabbitmq -e RABBITMQ_DEFAULT_USER=admin -e RABBITMQ_DEFAULT_PASS=admin -p 15672:15672 -p 5672:5672 rabbitmq:3.8.14-management
+```
+
+
+```bash
+docker pull phpmyadmin/phpmyadmin:5.0.4
+docker run -d --name phpmyadmin -e PMA_HOST=127.0.0.1 -e PMA_PORT=3306 -p 8283:80 phpmyadmin/phpmyadmin:5.0.4
+```
+
